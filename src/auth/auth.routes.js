@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { login, register } from "./auth.controller.js";
+import { login,  registerStudent, registerTeacher } from "./auth.controller.js";
 import { registerValidator, loginValidator } from "../middlewares/validator.js";
 
 const router = Router();
@@ -11,9 +11,16 @@ router.post(
 )
 
 router.post(
-    '/register',
+    '/register/student',
     registerValidator,
-    register
+    registerStudent
 )
+
+router.post(
+    '/register/teacher',
+    registerValidator,
+    registerTeacher
+)
+
 
 export default router;
