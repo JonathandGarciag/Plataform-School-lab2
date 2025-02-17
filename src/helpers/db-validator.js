@@ -11,11 +11,28 @@ export const esRoleValido = async (role = '') =>{
     }
 }
 
-export const existenteEmail = async (correo = '') =>{
+export const existenteEmail = async (email = '') =>{
 
-    const existeEmail = await User.findOne({ correo });
+    const existeEmail = await User.findOne({ email });
 
     if (existeEmail) {
-        throw new Error(`El correo ${correo} no existe en la base de datos`);
+        throw new Error(`El correo ${email} no existe en la base de datos`);
     }
 } 
+
+export const rolTeacher = async (role = '') =>{
+
+    const justTeacher = await Role.findOne({ role });
+
+    if (!justTeacher) {
+        throw new Error(`El correo ${role} no existe en la base de datos`);
+    }
+} 
+
+export const existeUsuarioById = async (id = '') => {
+    const existeUsuario = await User.findById(id);
+
+    if (!existeUsuario) {
+        throw new Error(`El ID ${id} no existe`);
+    }
+}
