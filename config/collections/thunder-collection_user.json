@@ -1,0 +1,69 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "user",
+    "collectionId": "675b7c9e-4893-429f-9adc-6afc0e939125",
+    "dateExported": "2025-02-17T17:44:26.524Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "465a39e4-7584-47dc-97ef-cfb6542c6f8f",
+            "colId": "675b7c9e-4893-429f-9adc-6afc0e939125",
+            "containerId": "",
+            "name": "user get",
+            "url": "http://localhost:3000/plataform/v2/user/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-02-17T15:31:08.076Z",
+            "modified": "2025-02-17T16:31:58.838Z",
+            "headers": []
+        },
+        {
+            "_id": "85ade5ff-5f6f-4fc1-94f0-e8e672b221b8",
+            "colId": "675b7c9e-4893-429f-9adc-6afc0e939125",
+            "containerId": "",
+            "name": "user get by id",
+            "url": "http://localhost:3000/plataform/v2/user/findUser/67b3475a9174d412928205e5",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-02-17T15:31:16.145Z",
+            "modified": "2025-02-17T16:38:10.740Z",
+            "headers": []
+        },
+        {
+            "_id": "8819ba2d-29e3-4c70-bfed-c4d4e28d87e2",
+            "colId": "675b7c9e-4893-429f-9adc-6afc0e939125",
+            "containerId": "",
+            "name": "user delete",
+            "url": "http://localhost:3000/plataform/v2/user/67b3540c9d83310c0cc6704f",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2025-02-17T15:31:32.429Z",
+            "modified": "2025-02-17T17:33:26.896Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IzNTQwYzlkODMzMTBjMGNjNjcwNGYiLCJpYXQiOjE3Mzk4MTM1OTQsImV4cCI6MTczOTgxNzE5NH0.3H0CREr9bXdy_fQ7hxZXkU4Q5igUKT7yYeX5_VJ8UtM"
+                }
+            ]
+        },
+        {
+            "_id": "651958e9-88f8-4062-8245-a4855d93dda9",
+            "colId": "675b7c9e-4893-429f-9adc-6afc0e939125",
+            "containerId": "",
+            "name": "user update",
+            "url": "http://localhost:3000/plataform/v2/user/67b34cb4579766d9df9e79ae",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2025-02-17T15:31:41.496Z",
+            "modified": "2025-02-17T17:41:29.660Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Carlos\",\n  \"surname\": \"Garc[ia\",\n  \"email\": \"pallo@gmail.com\",\n  \"password\": \"12345678\",\n  \"role\": \"TEACHER_ROLE\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "Wk62n5Upco1wZPgcE3ImNgPofUpsyW6nIQZJoir5cKtTEBycD1Xm__cRctutYrhLVUq3TqD9TT3PBwy4Hnpt3w"
+}
