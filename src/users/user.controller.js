@@ -96,26 +96,80 @@ export const deleteUser = async( req, res ) => {
     }
 }
 
-export const updateUser = async( req, res = response ) => {
+export const getUsersByRole = async (req = request, res = response) => {
     try {
-        
-        const { id } = req.params;
-        const { _id,  email, ...data } = req.body;
-        const encryptedPassword = await hash (data.password);
+        const { role } = req.params; 
+        const query = { status: true, role }; 
 
-        const user = await Usuario.findByIdAndUpdate(id, data, {new: true});
+        if (!["TEACHER_ROLE", "STUDENT_ROLE"].includes(role)) {
+            return res.status(400).json({
+                success: false,
+                msg: "Rol no válido. Los roles permitidos son: TEACHER_ROLE, STUDENT_ROLE"
+            });
+        }
+
+        const users = await User.find(query);
 
         res.status(200).json({
             success: true,
-            msg: 'Usuario Actualizado',
-            user
-        })
+            users
+        });
 
-    } catch (error) {
+    } catch (e) {
         res.status(500).json({
-            sucess: false,
-            msg: 'Error al actualizar usuario',
-            error
-        })
+            success: false,
+            msg: "Error al buscar usuarios por rol",
+            error: e.message
+        });
     }
-}
+};
+
+export const updateUser = async (req, res = response) => {
+    try {
+        const { id } = req.params;
+        const { _id, email, password, ...data } = req.body; 
+
+        const token = req.header("x-token");
+        if (!token) {
+            return res.status(401).json({
+                success: false,
+                msg: "No hay token en la petición",
+            });
+        }
+
+        const { uid } = jwt.verify(token, process.env.SECRETORPRIVATEKEY);
+
+        if (id !== uid) {
+            return res.status(403).json({
+                success: false,
+                msg: "No tienes permisos para modificar este usuario",
+            });
+        }
+
+        if (password) {
+            data.password = await hash(password);
+        }
+
+        const user = await User.findByIdAndUpdate(id, data, { new: true });
+
+        if (!user) {
+            return res.status(404).json({
+                success: false,
+                msg: "Usuario no encontrado",
+            });
+        }
+
+        res.status(200).json({
+            success: true,
+            msg: "Usuario actualizado correctamente",
+            user,
+        });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({
+            success: false,
+            msg: "Error al actualizar usuario",
+            error: error.message,
+        });
+    }
+};
