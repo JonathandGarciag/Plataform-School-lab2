@@ -1,0 +1,128 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "course",
+    "collectionId": "61a5f1be-4e14-403f-8980-1e4085d56954",
+    "dateExported": "2025-02-18T04:37:05.136Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "30a4168f-ccef-4f77-9508-091141682ccc",
+            "colId": "61a5f1be-4e14-403f-8980-1e4085d56954",
+            "containerId": "",
+            "name": "post course teacher",
+            "url": "http://localhost:3000/plataform/v2/course/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-02-18T02:24:46.619Z",
+            "modified": "2025-02-18T04:33:51.454Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IzNGFjMWM0NWUzMGU3NmM2NTMzZjMiLCJpYXQiOjE3Mzk4NTIxOTQsImV4cCI6MTczOTg1NTc5NH0.xQeFjN99pRrFlMCjHXtW-QZWXENj9FdCgCpP-9Je2V8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nameCourse\": \"Pokemon Avanzadas\",\n  \"description\": \"Curso de Pokemon avanzadas\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "177785d0-52f3-406a-bcae-86183cef3bdf",
+            "colId": "61a5f1be-4e14-403f-8980-1e4085d56954",
+            "containerId": "",
+            "name": "get course",
+            "url": "http://localhost:3000/plataform/v2/course/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-02-18T04:08:09.718Z",
+            "modified": "2025-02-18T04:34:35.040Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IzNGFjMWM0NWUzMGU3NmM2NTMzZjMiLCJpYXQiOjE3Mzk4NTIxOTQsImV4cCI6MTczOTg1NTc5NH0.xQeFjN99pRrFlMCjHXtW-QZWXENj9FdCgCpP-9Je2V8"
+                }
+            ]
+        },
+        {
+            "_id": "2bbf732b-5284-465e-99b0-8cc0ba519169",
+            "colId": "61a5f1be-4e14-403f-8980-1e4085d56954",
+            "containerId": "",
+            "name": "delete course",
+            "url": "http://localhost:3000/plataform/v2/course/67b407824de4609d9f61f3de",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2025-02-18T04:09:02.440Z",
+            "modified": "2025-02-18T04:09:30.561Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IzNGNiNDU3OTc2NmQ5ZGY5ZTc5YWUiLCJpYXQiOjE3Mzk4NTE1MjYsImV4cCI6MTczOTg1NTEyNn0.co3L70-51VFj2jjF3_vSt3HyId4zOyPavolSQaMJOMM"
+                }
+            ]
+        },
+        {
+            "_id": "d640b0ca-d317-4d7b-ac83-ab54eb68f5c3",
+            "colId": "61a5f1be-4e14-403f-8980-1e4085d56954",
+            "containerId": "",
+            "name": "put course",
+            "url": "http://localhost:3000/plataform/v2/course/67b407824de4609d9f61f3d9",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2025-02-18T04:09:49.722Z",
+            "modified": "2025-02-18T04:10:40.866Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IzNGNiNDU3OTc2NmQ5ZGY5ZTc5YWUiLCJpYXQiOjE3Mzk4NTE1MjYsImV4cCI6MTczOTg1NTEyNn0.co3L70-51VFj2jjF3_vSt3HyId4zOyPavolSQaMJOMM"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nameCourse\": \"Matemáticas Avanzadas\",\n  \"description\": \"Curso de matemáticas avanzadas y teoremas\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "6a119cb9-55af-434e-a5c9-16208e4ef8d6",
+            "colId": "61a5f1be-4e14-403f-8980-1e4085d56954",
+            "containerId": "",
+            "name": "assign student",
+            "url": "http://localhost:3000/plataform/v2/course/join/67b40daf0297fc1e82a6acbc",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2025-02-18T04:23:11.445Z",
+            "modified": "2025-02-18T04:34:19.008Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IzNDc1YTkxNzRkNDEyOTI4MjA1ZTUiLCJpYXQiOjE3Mzk4NTI3NjIsImV4cCI6MTczOTg1NjM2Mn0.Z6wnGzDmeXtBQXLNj7vFRjD1tP1P6NQXLK6xaQg3yNk"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "4200f574-329e-4cb8-b8a2-6f8edb1092a2",
+            "colId": "61a5f1be-4e14-403f-8980-1e4085d56954",
+            "containerId": "",
+            "name": "get assing student",
+            "url": "http://localhost:3000/plataform/v2/course/student",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2025-02-18T04:23:41.513Z",
+            "modified": "2025-02-18T04:32:55.779Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IzNDc1YTkxNzRkNDEyOTI4MjA1ZTUiLCJpYXQiOjE3Mzk4NTMxMDAsImV4cCI6MTczOTg1NjcwMH0.o9ahBsOsBkgT8ZONBL-N3XnbEWcl2c9m-vOHMdvakMs"
+                }
+            ]
+        }
+    ],
+    "ref": "RJNb9CtvE8jVzLl7jbU7pKkY8hZ6w4wXQtHA3yANmgNFli6yrSVPSYuaicfEv6KJHgxR-dt6XXB0-Qkt6uJFWg"
+}

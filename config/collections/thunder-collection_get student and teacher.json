@@ -1,0 +1,35 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "get student and teacher",
+    "collectionId": "f487d266-01c0-4b44-ba5a-a2221eaaed22",
+    "dateExported": "2025-02-18T04:36:59.169Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b2f76429-637e-475c-ac3b-2a481ff36c3e",
+            "colId": "f487d266-01c0-4b44-ba5a-a2221eaaed22",
+            "containerId": "",
+            "name": "get student",
+            "url": "http://localhost:3000/plataform/v2/user/byRole/STUDENT_ROLE",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-02-18T00:35:06.168Z",
+            "modified": "2025-02-18T01:05:04.820Z",
+            "headers": []
+        },
+        {
+            "_id": "88c1f296-e46c-494f-bc26-ab1f5f39bb49",
+            "colId": "f487d266-01c0-4b44-ba5a-a2221eaaed22",
+            "containerId": "",
+            "name": "get teacher",
+            "url": "http://localhost:3000/plataform/v2/user/byRole/TEACHER_ROLE",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-02-18T00:44:50.751Z",
+            "modified": "2025-02-18T01:00:17.524Z",
+            "headers": []
+        }
+    ],
+    "ref": "AlMikka62pRu76oHtxs5C5HI6FpdAi8MCBGudRzUhsOymFKeqSqsa31-qBgiaUDAwzNkfZo9SuFEtxeNHtOJNA"
+}

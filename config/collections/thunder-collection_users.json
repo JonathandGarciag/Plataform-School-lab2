@@ -1,0 +1,28 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "users",
+    "collectionId": "ff79bf69-d2e6-4ad9-94ae-46750461e75d",
+    "dateExported": "2025-02-17T03:34:33.231Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "754c660a-fa49-4819-ba95-9f16834ccd21",
+            "colId": "ff79bf69-d2e6-4ad9-94ae-46750461e75d",
+            "containerId": "",
+            "name": "register",
+            "url": "http://localhost:3000/plataform/v2/auth/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-02-16T23:42:03.336Z",
+            "modified": "2025-02-17T02:35:50.663Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Jorge\",\n  \"surname\": \"Gonzales\",\n  \"email\": \"Jgonzal@gmail.com\",\n  \"password\": \"12345678\",\n  \"role\": \"STUDENT_ROLE\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "a-s0bJ8vr3bl-HgT6swjtENJ_dJH6lIh_MKbWoHpaaLyiWhzgOCRapO0uEknBuo1qinGxwbwwN-Ry-IS_dpA6w"
+}

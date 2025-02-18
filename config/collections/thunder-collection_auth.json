@@ -1,0 +1,62 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "auth",
+    "collectionId": "3677e9f6-264f-473e-8c53-968fd4192af3",
+    "dateExported": "2025-02-17T17:44:15.067Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "fd5d77f2-c30c-4818-88e2-d755742b5302",
+            "colId": "3677e9f6-264f-473e-8c53-968fd4192af3",
+            "containerId": "",
+            "name": "register student",
+            "url": "http://localhost:3000/plataform/v2/auth/register/student",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-02-17T13:58:35.849Z",
+            "modified": "2025-02-17T15:23:49.943Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Jose\",\n  \"surname\": \"Hernandez\",\n  \"email\": \"sasa@gmail.com\",\n  \"password\": \"12345678\",\n  \"role\": \"TEACHER_ROLE\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "3c913195-059b-437a-a10f-0ad72ceca526",
+            "colId": "3677e9f6-264f-473e-8c53-968fd4192af3",
+            "containerId": "",
+            "name": "register teacher",
+            "url": "http://localhost:3000/plataform/v2/auth/register/teacher",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-02-17T14:49:22.288Z",
+            "modified": "2025-02-17T14:50:28.052Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Carlos\",\n  \"surname\": \"Borrayo\",\n  \"email\": \"pallo@gmail.com\",\n  \"password\": \"12345678\",\n  \"role\": \"TEACHER_ROLE\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ea4dc40e-ce28-4eba-b7a4-562d3a844dd0",
+            "colId": "3677e9f6-264f-473e-8c53-968fd4192af3",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3000/plataform/v2/auth/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2025-02-17T14:50:42.691Z",
+            "modified": "2025-02-17T17:05:36.058Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"jhernandez@gmail.com\",\n  \"password\": \"12345678\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "SPmOcuK-QfatG3Mx-IFpWvdKKsyCZBGn099GH1P1-vARRLsoDDfpcd0_oBcO9UY-lI8a7dgYGqF2vr2n9UQwSA"
+}
