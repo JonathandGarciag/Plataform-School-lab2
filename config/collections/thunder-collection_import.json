@@ -1,0 +1,50 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "import",
+    "collectionId": "1f9a8a43-fb35-4b87-9328-d49a9eab3f3b",
+    "dateExported": "2025-02-18T04:36:42.305Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3d4c3e55-0cd0-4f97-ad37-fa8bde4a2b1a",
+            "colId": "1f9a8a43-fb35-4b87-9328-d49a9eab3f3b",
+            "containerId": "",
+            "name": "put user",
+            "url": "http://localhost:3000/plataform/v2/user/67b34cb4579766d9df9e79ae",
+            "method": "PUT",
+            "sortNum": 10000,
+            "created": "2025-02-17T23:15:40.947Z",
+            "modified": "2025-02-18T01:26:21.958Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IzNGNiNDU3OTc2NmQ5ZGY5ZTc5YWUiLCJpYXQiOjE3Mzk4NDE5MzAsImV4cCI6MTczOTg0NTUzMH0.3PU28W9ffd0CwA6XC_6xObmp3V-D0gPBtfxz4WFdEG8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Carlos\",\n  \"surname\": \"García\",\n  \"email\": \"pallo@gmail.com\",\n  \"password\": \"12345678\",\n  \"role\": \"TEACHER_ROLE\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "283bec86-888f-4cce-aa08-0ab03a4aea19",
+            "colId": "1f9a8a43-fb35-4b87-9328-d49a9eab3f3b",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3000/plataform/v2/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-02-18T01:21:27.563Z",
+            "modified": "2025-02-18T04:26:02.703Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Christian\",\n  \"email\": \"cmedrano@gmail.com\",\n  \"password\": \"12345678\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "V79PvtORxRXAI8N5TheQx01fM6RxlqZM3ZKFZo65KmPHjvBXevGsqFEtKwCcV4cq2UEA_z0fPsxA8jLj-xPWNw"
+}

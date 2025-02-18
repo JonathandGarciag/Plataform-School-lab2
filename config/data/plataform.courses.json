@@ -1,0 +1,102 @@
+[{
+  "_id": {
+    "$oid": "67b407824de4609d9f61f3d9"
+  },
+  "nameCourse": "Matemáticas Avanzadas",
+  "description": "Curso de matemáticas avanzadas y teoremas",
+  "teacher": {
+    "$oid": "67b34cb4579766d9df9e79ae"
+  },
+  "students": [
+    {
+      "$oid": "67b3475a9174d412928205e5"
+    }
+  ],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-18T04:07:30.264Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-18T04:29:18.076Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b40942170dd9da0796a43e"
+  },
+  "nameCourse": "Fisica Avanzadas",
+  "description": "Curso de Fisica avanzadas",
+  "teacher": {
+    "$oid": "67b34cb4579766d9df9e79ae"
+  },
+  "students": [],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-18T04:14:58.712Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-18T04:14:58.712Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b4094a170dd9da0796a443"
+  },
+  "nameCourse": "Biologia Avanzadas",
+  "description": "Curso de Biologia avanzadas",
+  "teacher": {
+    "$oid": "67b34cb4579766d9df9e79ae"
+  },
+  "students": [],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-18T04:15:06.625Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-18T04:15:06.625Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b40a52df67a9ac5313fced"
+  },
+  "nameCourse": "Quimica Avanzadas",
+  "description": "Curso de Quimica avanzadas",
+  "teacher": {
+    "$oid": "67b34ac1c45e30e76c6533f3"
+  },
+  "students": [
+    {
+      "$oid": "67b3475a9174d412928205e5"
+    }
+  ],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-18T04:19:30.017Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-18T04:33:23.031Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b40daf0297fc1e82a6acbc"
+  },
+  "nameCourse": "Pokemon Avanzadas",
+  "description": "Curso de Pokemon avanzadas",
+  "teacher": {
+    "$oid": "67b34ac1c45e30e76c6533f3"
+  },
+  "students": [
+    {
+      "$oid": "67b3475a9174d412928205e5"
+    }
+  ],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-18T04:33:51.446Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-18T04:34:18.989Z"
+  }
+}]
